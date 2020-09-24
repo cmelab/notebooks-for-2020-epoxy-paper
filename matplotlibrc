@@ -1,0 +1,67 @@
+
+# Increase the default DPI, and change the file type from png to pdf 
+savefig.dpi             :   600
+savefig.format          :   pdf
+
+# Simplify paths by removing "invisible" points, useful for reducing
+# file size when plotting a large number of points
+path.simplify           :   True
+
+# Instead of individually increasing font sizes, point sizes, and line 
+# thicknesses, I found it easier to just decrease the figure size so
+# that the line weights of various components still agree 
+figure.figsize          :   7,6
+
+# This ended up cutting off the xlabel and ylabel so let matplotlib
+# determine the layout automatically
+figure.autolayout       :   True
+
+# Sort out the fonts
+font.family             :   sans-serif
+font.sans-serif         :   DejaVu Sans
+font.size               :   28
+mathtext.fontset        :   dejavusans
+mathtext.rm             :   DejaVu Sans
+mathtext.it             :   DejaVu Sans:italic
+mathtext.bf             :   DejaVu Sans:bold
+
+# Make the axes thicker
+axes.linewidth          :   1.5
+lines.linewidth         :   3.0
+
+# Increase the tick-mark lengths (defaults are 4 and 2)
+xtick.major.size        :   8
+ytick.major.size        :   8 
+xtick.minor.size        :   5	
+ytick.minor.size        :   5
+xtick.major.pad         :   10
+ytick.major.pad         :   10
+xtick.labelsize         :   20
+ytick.labelsize         :   20
+
+# Increase the tick-mark widths as well as the widths of lines 
+# used to draw marker edges to be consistent with the other figure
+# linewidths (defaults are all 0.5)
+xtick.major.width       :   1.5
+ytick.major.width       :   1.5
+xtick.minor.width       :   1.0
+ytick.minor.width       :   1.0
+lines.markeredgewidth   :   1.5
+lines.solid_capstyle    :   round
+
+# Have the legend only plot one point instead of two, turn off the 
+# frame, and reduce the space between the point and the label  
+legend.numpoints        :   1
+legend.frameon          :   False
+legend.handletextpad    :   0.3
+
+# Some tweeks by mike
+axes.labelsize     : x-large  ## fontsize of the x any y labels
+
+xtick.minor.visible: True
+ytick.minor.visible: True
+xtick.direction:     in
+ytick.direction:     in
+
+legend.fontsize:      x-large
+axes.labelweight: bold
